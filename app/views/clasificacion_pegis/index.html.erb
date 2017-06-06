@@ -1,0 +1,25 @@
+<h1>Listing clasificacion_pegis</h1>
+
+<table>
+  <tr>
+    <th>Clasificacion</th>
+    <th>Descripcion</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @clasificacion_pegis.each do |clasificacion_pegi| %>
+  <tr>
+    <td><%= clasificacion_pegi.Clasificacion %></td>
+    <td><%= clasificacion_pegi.Descripcion %></td>
+    <td><%= link_to 'Show', clasificacion_pegi %></td>
+    <td><%= link_to 'Edit', edit_clasificacion_pegi_path(clasificacion_pegi) %></td>
+    <td><%= link_to 'Destroy', clasificacion_pegi, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Clasificacion pegi', new_clasificacion_pegi_path %>

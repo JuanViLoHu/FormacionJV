@@ -1,0 +1,45 @@
+<%= form_for(@juego) do |f| %>
+  <% if @juego.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@juego.errors.count, t('views.tag_error')) %> <%= t('views.juego_no_puede_grabarse') %> </h2>
+
+      <ul>
+      <% @juego.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>	
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t('models.juegos.titulo') %><br />
+    <%= f.text_field :Titulo %>
+  </div>
+  <div class="field">
+    <%= f.label t('models.juegos.marca') %><br />
+    <%= f.text_field :Marca %>
+  </div>
+  <div class="field">
+    <%= f.label t('models.juegos.plataforma') %><br />
+    <%= f.text_field :Plataforma %>
+  </div>
+  <div class="field">
+    <%= f.label t('models.juegos.clasificacion_pegi') %><br />
+    <%= f.text_area :ClasifPEGI %>
+  </div>
+  <div class="field">
+    <%= f.label t('models.juegos.genero') %><br />
+    <%= f.text_area :Genero %>
+  </div>
+  <div class="field">
+    <%= f.label t('models.juegos.subgenero') %><br />
+    <%= f.text_area :Subgenero %>
+  </div>
+  <div class="field">
+    <%= f.label t('models.juegos.soporte_digital') %><br />
+    <%= f.text_area :SoporteDig %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

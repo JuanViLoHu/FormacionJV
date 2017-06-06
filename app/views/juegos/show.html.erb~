@@ -1,0 +1,42 @@
+<h1><%= t('views.visualizando_juego') %></h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b><%= t('models.juegos.titulo') %>:</b>
+  <%= @juego.Titulo %>
+</p>
+
+<p>
+  <b><%= t('models.juegos.marca') %>:</b>
+  <%= @juego.Marca %>
+</p>
+
+<p>
+  <b><%= t('models.juegos.plataforma') %>:</b>
+  <%= @juego.Plataforma %>
+</p>
+
+<p>
+  <b><%= t('models.juegos.clasificacion_pegi') %>:</b>
+  <%= @juego.ClasifPEGI %>
+</p>
+
+<p>
+  <b><%= t('models.juegos.genero') %>:</b>
+  <%= @juego.Genero %>
+</p>
+
+<p>
+  <b><%= t('models.juegos.subgenero') %>:</b>
+  <%= @juego.Subgenero %>
+</p>
+
+<p>
+  <b><%= t('models.juegos.soporte_digital') %>:</b>
+  <%= @juego.SoporteDig %>
+</p>
+
+
+<%= link_to t('views.edit'), edit_juego_path(@juego) %> |
+<%= link_to t('views.volver'), juegos_path %>

@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  views:
+    juegos: 'Games'
+    listado_juegos: 'List of games'
+    modificando_juego: 'Editing game'
+    visualizando_juego: 'Viewing game'
+    nuevo_juego: 'New game'
+    show: 'Show'
+    edit: 'Edit'
+    destroy: 'Destroy'
+    confirm: 'Are you sure?'
+    nuevo_juego: 'New Game'
+    volver: 'Back'
+    tag_error: 'Error!'
+    juego_no_puede_grabarse: 'prohibited this game from being saved:'
+

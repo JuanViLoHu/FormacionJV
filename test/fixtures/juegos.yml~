@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Titulo: MyString
+  Marca: MyString
+  Plataforma: MyString
+  ClasifPEGI: MyText
+  Genero: MyText
+  Subgenero: MyText
+  SoporteDig: MyText
+
+two:
+  Titulo: MyString
+  Marca: MyString
+  Plataforma: MyString
+  ClasifPEGI: MyText
+  Genero: MyText
+  Subgenero: MyText
+  SoporteDig: MyText

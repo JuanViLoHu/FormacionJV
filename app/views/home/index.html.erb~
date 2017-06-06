@@ -1,0 +1,8 @@
+
+<h1> <%= t('views.tag_juegos') %> </h1>
+
+<%= link_to t('views.tag_juegos'), juegos_path %> <br /> <br />
+
+<%= link_to "INFO 3DJuegos", "http://www.3djuegos.com" %>
+
+

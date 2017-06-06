@@ -1,0 +1,35 @@
+<h1><%= t('views.listado_juegos') %></h1>
+
+<table>
+  <tr>
+    <th> <%= t('models.juegos.titulo') %> </th>
+    <th> <%= t('models.juegos.marca') %> </th>
+    <th> <%= t('models.juegos.plataforma') %> </th>
+    <th> <%= t('models.juegos.clasificacion_pegi') %> </th>
+    <th> <%= t('models.juegos.genero') %> </th>
+    <th> <%= t('models.juegos.subgenero') %> </th>
+    <th> <%= t('models.juegos.soporte_digital') %> </th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @juegos.each do |juego| %>
+  <tr>
+    <td><%= juego.Titulo %></td>
+    <td><%= juego.Marca %></td>
+    <td><%= juego.Plataforma %></td>
+    <td><%= juego.ClasifPEGI %></td>
+    <td><%= juego.Genero %></td>
+    <td><%= juego.Subgenero %></td>
+    <td><%= juego.SoporteDig %></td>
+    <td><%= link_to t('views.show'), juego %></td>
+    <td><%= link_to t('views.edit'), edit_juego_path(juego) %></td>
+    <td><%= link_to t('views.destroy'), juego, confirm: t('views.confirm'), method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to t('views.nuevo_juego'), new_juego_path %>

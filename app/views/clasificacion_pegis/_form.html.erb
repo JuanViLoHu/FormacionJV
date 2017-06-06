@@ -1,0 +1,25 @@
+<%= form_for(@clasificacion_pegi) do |f| %>
+  <% if @clasificacion_pegi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@clasificacion_pegi.errors.count, "error") %> prohibited this clasificacion_pegi from being saved:</h2>
+
+      <ul>
+      <% @clasificacion_pegi.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Clasificacion %><br />
+    <%= f.text_field :Clasificacion %>
+  </div>
+  <div class="field">
+    <%= f.label :Descripcion %><br />
+    <%= f.text_field :Descripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

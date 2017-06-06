@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Clasificacion:</b>
+  <%= @clasificacion_pegi.Clasificacion %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @clasificacion_pegi.Descripcion %>
+</p>
+
+
+<%= link_to 'Edit', edit_clasificacion_pegi_path(@clasificacion_pegi) %> |
+<%= link_to 'Back', clasificacion_pegis_path %>

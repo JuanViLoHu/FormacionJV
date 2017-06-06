@@ -1,0 +1,7 @@
+class DeletePosts < ActiveRecord::Migration
+  def change
+      drop_table :products
+      t.timestamps
+    end
+  end
+end
